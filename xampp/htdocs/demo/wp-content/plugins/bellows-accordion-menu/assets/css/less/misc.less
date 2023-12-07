@@ -1,0 +1,66 @@
+.bellows-screen-reader,
+.bellows-target-divider{
+	position:absolute;
+	overflow:hidden;
+	clip:rect(0 0 0 0);
+	height:1px;
+	width:1px;
+	margin:-1px;
+	padding:0;
+	margin:0;
+	border:0;
+}
+
+/* Admin Notices */
+.bellows-admin-notice,
+.bellows .bellows-nav .bellows-admin-notice{
+	background:#eee;
+	color:#333;
+	padding:15px;
+	border-left:30px solid #4D90FE;
+	margin:20px;
+	position:relative;
+	font-size:12px;
+	clear:both;
+}
+.bellows-admin-notice a,
+.bellows .bellows-nav .bellows-admin-notice a,
+.bellows .bellows-nav .bellows-admin-notice a:visited{
+	color:#00A3FF;
+	text-decoration: underline;
+	font-size:inherit;
+}
+.bellows-admin-notice a:hover,
+.bellows .bellows-nav .bellows-admin-notice a:hover{
+	color:#0D75AF;
+}
+.bellows-admin-notice strong,
+.bellows .bellows-nav .bellows-admin-notice strong{
+	color:tomato;
+}
+.bellows-admin-notice .bellows-admin-notice-icon,
+.bellows .bellows-nav .bellows-admin-notice .bellows-admin-notice-icon{
+	position:absolute;
+	left:-18px;
+	top:50%;
+	margin-top:-5px;
+	color:#fff;
+	font-size:13px;
+}
+.bellows-admin-notice:after,
+.bellows .bellows-nav .bellows-admin-notice:after{
+	display:none;
+	position:absolute;
+	content:'Bellows Notice: Only displayed to admin users';
+	left:-30px;
+	bottom:100%;
+	background:#666;
+	color:#eee;
+	padding:7px 10px;
+	font-size:11px;
+	line-height:1.3em;
+}
+.bellows-admin-notice:hover:after,
+.bellows .bellows-nav .bellows-admin-notice:hover:after{
+	display:block;
+}

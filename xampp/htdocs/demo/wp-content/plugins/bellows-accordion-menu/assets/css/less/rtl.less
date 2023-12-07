@@ -1,0 +1,72 @@
+.rtl {
+
+    .bellows .bellows-nav .bellows-menu-item-has-children > .bellows-target{
+        padding-left:90px; //fallback
+        padding-left: calc( var( --bellows-item-padding-h ) + var( --bellows-toggle-width ) );
+        padding-right:var(--bellows-item-padding-h);
+    }
+    .bellows .bellows-nav .bellows-subtoggle{
+        right:auto;
+        left:0;
+    }
+    .bellows .bellows-icon{
+        margin-right:0;
+        margin-left:.9em;
+    }
+    .bellows .bellows-nav .bellows-menu-item .bellows-target.bellows-target-w-image{
+        padding:0;
+    }
+
+    .bellows .bellows-nav .bellows-submenu .bellows-target,
+    .bellows .bellows-nav .bellows-submenu .bellows-custom-content.bellows-custom-content-padded,
+    .bellows .bellows-nav .bellows-submenu .bellows .bellows-target.bellows-target-w-image > .bellows-target-text,
+    .bellows .bellows-nav .bellows-submenu .bellows-target.bellows-target-w-image > .bellows-image.bellows-image-padded{
+        padding-left: var(--bellows-sub-item-padding-h);
+        // Padding + ( Indent * (Level - 1) )
+        padding-right: calc( var( --bellows-sub-item-padding-h ) + ( var( --bellows-indent ) * ( var( --bellows-level ) - var( --bellows-indent-level-offset ) ) ) );
+    }
+
+    .bellows-type-tree{        
+
+        .bellows-nav .bellows-item-level-0 {
+            > .bellows-target,
+            > .bellows-custom-content.bellows-custom-content-padded,
+            > .bellows-target.bellows-target-w-image > .bellows-target-text,
+            > .bellows-target.bellows-target-w-image > .bellows-image.bellows-image-padded{
+                padding-right: calc( var( --bellows-tree-toggle-item-gap ) + var( --bellows-tree-toggle-w ) );
+                padding-left: var( --bellows-item-padding-h );
+            }
+
+
+            .bellows-subtoggle{
+                left:auto;
+                right: 0;
+            }
+        }
+        .bellows-nav .bellows-submenu {
+
+            .bellows-target,
+            .bellows-custom-content.bellows-custom-content-padded,
+            .bellows-target.bellows-target-w-image > .bellows-target-text,
+            .bellows-target.bellows-target-w-image > .bellows-image.bellows-image-padded{
+                padding-right: calc( var( --bellows-tree-toggle-sub-item-gap ) + ( var( --bellows-indent ) * ( var( --bellows-level ) - var( --bellows-indent-level-offset ) ) ) + var( --bellows-tree-toggle-w ) );
+                padding-left: var( --bellows-sub-item-padding-h );
+            }
+
+            .bellows-subtoggle{
+                left:auto;
+                right: calc( var( --bellows-tree-toggle-sub-item-gap  ) + ( var( --bellows-indent ) * ( var( --bellows-level ) - var( --bellows-indent-level-offset ) ) ) );
+            }
+        }
+
+    }
+
+    .bellows-menu-toggle{
+        
+        .bellows-menu-toggle-text{
+            margin-right:.3em;
+            margin-left:0;
+        }
+    }
+
+}
